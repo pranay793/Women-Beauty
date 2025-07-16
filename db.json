@@ -1,0 +1,312 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Swiss Beauty Highlighting Primer",
+        "image": "images/product-img1.png",
+        "brand": "Swiss Beauty",
+        "price": 33.30, 
+        "rating": 4.5,
+        "custshow": 200,
+        "soldpro": 30,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img1.png" },
+          { "id": 2, "url": "images/product-img1-a.png" },
+          { "id": 3, "url": "images/product-img1-b.png" },
+          { "id": 4, "url": "images/product-img1-c.png" }
+        ], 
+        "handle": "Swiss Beauty"
+      },
+
+      {
+        "id": 2,
+        "title": "Lakmē Skin Dew Primer",
+        "image": "images/product-img2.png",
+        "brand": "Lakmē",
+        "price": 25.50,
+        "rating": 3.5,
+        "custshow": 118,
+        "soldpro": 22,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img2.png" },
+          { "id": 2, "url": "images/product-img2-a.png" },
+          { "id": 3, "url": "images/product-img2-b.png" },
+          { "id": 4, "url": "images/product-img2-c.png" }
+        ], 
+        "handle": "Lakmē"
+      },
+      {
+        "id": 3,
+        "title": "Swiss Beauty Airbrush Foundation",
+        "image": "images/product-img3.png",
+        "brand": "Swiss Beauty",
+        "price": 45.78,
+        "rating": 5,
+        "custshow": 250,
+        "soldpro": 56,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img3.png" },
+          { "id": 2, "url": "images/product-img3-a.png" },
+          { "id": 3, "url": "images/product-img3-b.png" },
+          { "id": 4, "url": "images/product-img3-c.png" }
+        ], 
+        "handle": "Dot & Key"
+      },
+      {
+        "id": 4,
+        "title": "Lakmē Dewy Overnight Gel",
+        "image": "images/product-img4.png",
+        "brand": "Lakmē",
+        "price": 53.89,
+        "rating": 4.5,
+        "custshow": 180,
+        "soldpro": 15,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img4.png" },
+          { "id": 2, "url": "images/product-img4-a.png" },
+          { "id": 3, "url": "images/product-img4-b.png" },
+          { "id": 4, "url": "images/product-img4-c.png" }
+        ], 
+        "handle": "Lakmē"
+      },
+      {
+        "id": 5,
+        "title": "Dior Sauvage Parfum",
+        "image": "images/product-img5.png",
+        "brand": "Dior",
+        "price": 89.00,
+        "rating": 4,
+        "custshow": 220,
+        "soldpro": 44,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img5.png" },
+          { "id": 2, "url": "images/product-img5-a.png" },
+          { "id": 3, "url": "images/product-img5-b.png" },
+          { "id": 4, "url": "images/product-img5-c.png" }
+        ], 
+        "handle": "Dior"
+      },
+      {
+        "id": 6,
+        "title": "Dior Prestige Le Concentré Yeux",
+        "image": "images/product-img6.png",
+        "brand": "Dior",
+        "price": 78.99,
+        "rating": 3.5,
+        "custshow": 156,
+        "soldpro": 22,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img6.png" },
+          { "id": 2, "url": "images/product-img6-a.png" },
+          { "id": 3, "url": "images/product-img6-b.png" },
+          { "id": 4, "url": "images/product-img6-c.png" }
+        ], 
+        "handle": "Dior"
+      },
+      {
+        "id": 7,
+        "title": "M·A·C Matte Lipstick",
+        "image": "images/product-img7.png",
+        "brand": "M·A·C",
+        "price": 56.00,
+        "rating": 5,
+        "custshow": 116,
+        "soldpro": 11,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img7.png" },
+          { "id": 2, "url": "images/product-img7-a.png" },
+          { "id": 3, "url": "images/product-img7-b.png" },
+          { "id": 4, "url": "images/product-img7-c.png" }
+        ], 
+        "handle": "M·A·C"
+      },
+      {
+        "id": 8,
+        "title": "M·A·C Plus Foundation",
+        "image": "images/product-img8.png",
+        "brand": "M·A·C",
+        "price": 43.00,
+        "rating": 3.5,
+        "custshow": 170,
+        "soldpro": 22,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img8.png" },
+          { "id": 2, "url": "images/product-img8-a.png" },
+          { "id": 3, "url": "images/product-img8-b.png" },
+          { "id": 4, "url": "images/product-img8-c.png" }
+        ], 
+        "handle": "M·A·C"
+      },
+      {
+        "id": 9,
+        "title": "M·A·C Fix+ Matte",
+        "image": "images/product-img9.png",
+        "brand": "M·A·C",
+        "price": 22.00,
+        "rating": 4.5,
+        "custshow": 115,
+        "soldpro": 30,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img9.png" },
+          { "id": 2, "url": "images/product-img9-a.png" },
+          { "id": 3, "url": "images/product-img9-b.png" },
+          { "id": 4, "url": "images/product-img9-c.png" }
+        ], 
+        "handle": "M·A·C"
+      },
+      {
+        "id": 10,
+        "title": "Sugar Acid Sunscreen Gel",
+        "image": "images/product-img10.png",
+        "brand": "Sugar",
+        "price": 43.00,
+        "rating": 5,
+        "custshow": 135,
+        "soldpro": 25,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img10.png" },
+          { "id": 2, "url": "images/product-img10-a.png" },
+          { "id": 3, "url": "images/product-img10-b.png" },
+          { "id": 4, "url": "images/product-img10-c.png" }
+        ], 
+        "handle": "Sugar"
+      },
+      {
+        "id": 11,
+        "title": "Sugar Transferproof Foundation",
+        "image": "images/product-img11.png",
+        "brand": "Sugar",
+        "price": 43.00,
+        "rating": 3,
+        "custshow": 122,
+        "soldpro": 40,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img11.png" },
+          { "id": 2, "url": "images/product-img11-a.png" },
+          { "id": 3, "url": "images/product-img11-b.png" },
+          { "id": 4, "url": "images/product-img11-c.png" }
+        ], 
+        "handle": "Sugar"
+      },
+      {
+        "id": 12,
+        "title": "Lakmē 9 to 5 CC Cream ",
+        "image": "images/product-img12.png",
+        "brand": "Lakmē",
+        "price": 43.00,
+        "rating": 4.5,
+        "custshow": 180,
+        "soldpro": 20,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img12.png" },
+          { "id": 2, "url": "images/product-img12-a.png" },
+          { "id": 3, "url": "images/product-img12-b.png" },
+          { "id": 4, "url": "images/product-img12-c.png" }
+        ], 
+        "handle": "Lakmē"
+      },
+      {
+        "id": 13,
+        "title": "Dot & Key Moisturizer Skin",
+        "image": "images/product-img13.png",
+        "brand": "Dot&Key",
+        "price": 73.00,
+        "rating": 5,
+        "custshow": 235,
+        "soldpro": 69,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img13.png" },
+          { "id": 2, "url": "images/product-img13-a.png" },
+          { "id": 3, "url": "images/product-img13-b.png" },
+          { "id": 4, "url": "images/product-img13-c.png" }
+        ], 
+        "handle": "Dot & Key"
+      },
+      {
+        "id": 14,
+        "title": "Dot & Key Barrier Repair Moisturizer",
+        "image": "images/product-img14.png",
+        "brand": "Dot&Key",
+        "price": 57.19,
+        "rating": 3.5,
+        "custshow": 180,
+        "soldpro": 20,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img14.png" },
+          { "id": 2, "url": "images/product-img14-a.png" },
+          { "id": 3, "url": "images/product-img14-b.png" },
+          { "id": 4, "url": "images/product-img14-c.png" }
+        ], 
+        "handle": "Dot & Key"
+      },
+      {
+        "id": 15,
+        "title": "BEILI Brush Collection",
+        "image": "images/product-img15.png",
+        "brand": "BEILI",
+        "price": 57.19,
+        "rating": 4.5,
+        "custshow": 187,
+        "soldpro": 34,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img15.png" },
+          { "id": 2, "url": "images/product-img15-a.png" },
+          { "id": 3, "url": "images/product-img15-b.png" },
+          { "id": 4, "url": "images/product-img15-c.png" }
+        ], 
+        "handle": "BEILI"
+      },
+      {
+        "id": 16,
+        "title": "Sugar Matte Setting Mist",
+        "image": "images/product-img16.png",
+        "brand": "Sugar",
+        "price": 57.19,
+        "rating": 4,
+        "custshow": 223,
+        "soldpro": 40,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img16.png" },
+          { "id": 2, "url": "images/product-img16-a.png" },
+          { "id": 3, "url": "images/product-img16-b.png" },
+          { "id": 4, "url": "images/product-img16-c.png" }
+        ], 
+        "handle": "Sugar"
+      },
+      {
+        "id": 17,
+        "title": "Swiss Beauty Holographic Eyeliner",
+        "image": "images/product-img17.png",
+        "brand": "Swiss Beauty",
+        "price": 57.19,
+        "rating": 4.5,
+        "custshow": 200,
+        "soldpro": 45,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img17.png" },
+          { "id": 2, "url": "images/product-img17-a.png" },
+          { "id": 3, "url": "images/product-img17-b.png" },
+          { "id": 4, "url": "images/product-img17-c.png" }
+        ], 
+        "handle": "Swiss Beauty"
+      },
+      {
+        "id": 18,
+        "title": "Dot & Key Hydrating Gel",
+        "image": "images/product-img18.png",
+        "brand": "Dot&Key",
+        "price": 57.19,
+        "rating": 5,
+        "custshow": 185,
+        "soldpro": 28,
+        "imageArray": [
+          { "id": 1, "url": "images/product-img18.png" },
+          { "id": 2, "url": "images/product-img18-a.png" },
+          { "id": 3, "url": "images/product-img18-b.png" },
+          { "id": 4, "url": "images/product-img18-c.png" }
+        ], 
+        "handle": "Dot & Key"
+      }
+    ]
+  }
+  
