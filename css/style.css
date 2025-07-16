@@ -1181,3 +1181,22 @@ input[type="range"] {
   font-size: 16px;
   text-decoration: none;
 }
+
+.title-order {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 19px;
+  border-radius: 10px 10px 0 0;
+}
+.order-summary-box {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.summary-item{
+  padding: 0 20px;
+}
+.summary-item img{
+  border: 1px solid #ccc;
+}
