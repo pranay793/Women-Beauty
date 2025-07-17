@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(product => {
       const productPriceEl = document.getElementById("product-price");
       const basePrice = product.price;
-      productPriceEl.textContent = `₹${basePrice.toFixed(2)}`;
+      productPriceEl.textContent = `$${basePrice.toFixed(2)}`;
       document.getElementById("product-title").textContent = product.title;
       document.getElementById("main-image").src = product.image;
 
@@ -55,11 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
           thumb.addEventListener("click", () => {
             document.getElementById("main-image").src = imageObj.url;
 
-            // Remove active from all thumbnails
             const allThumbs = document.querySelectorAll(".thumbnail-images");
             allThumbs.forEach(t => t.classList.remove("active"));
 
-            // Add active to clicked one
             thumb.classList.add("active");
           });
 
@@ -74,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       quantityInput.addEventListener("input", () => {
         const qty = parseInt(quantityInput.value) || 1;
         const total = basePrice * qty;
-        productPriceEl.textContent = `₹${total.toFixed(2)}`;
+        productPriceEl.textContent = `$${total.toFixed(2)}`;
       });
 
       // Add to Cart
@@ -110,7 +108,73 @@ document.addEventListener("DOMContentLoaded", () => {
         soldCountEl.textContent = `${product.soldpro || 0} Sold`;
       }
 
-      // Function to add to cart
+      // === Description Section ===
+      const descWrapper = document.getElementById("product-description-section");
+
+      if (descWrapper) {
+        let descHTML = `
+          <h5 class="fw-bold mb-3">Description</h5>
+          ${Array.isArray(product.description)
+            ? product.description.map(p => `<p class="text-muted mb-3">${p}</p>`).join("")
+            : `<p class="text-muted mb-3">${product.description || ""}</p>`}
+          
+          <h6 class="fw-bold mb-3">Why Choose Us?</h6>
+          <p class="text-muted mb-3">${product.whyChooseUs || ""}</p>
+
+          <h6 class="fw-bold mb-3">Sustainability & Care</h6>
+          <p class="text-muted">${product.sustainabilityCare || ""}</p>
+        `;
+        descWrapper.innerHTML = descHTML;
+      }
+
+      // === Reviews Section ===
+      const reviewsWrapper = document.getElementById("product-reviews-section");
+
+      if (reviewsWrapper && Array.isArray(product.reviews)) {
+        let reviewsHTML = product.reviews.map(review => {
+          const fullStars = Math.floor(review.rating);
+          const halfStar = review.rating % 1 >= 0.5 ? 1 : 0;
+          const emptyStars = 5 - fullStars - halfStar;
+
+          let starsHTML = "";
+
+          for (let i = 0; i < fullStars; i++) {
+            starsHTML += `<i class="fas fa-star text-warning me-1"></i>`;
+          }
+          if (halfStar) {
+            starsHTML += `<i class="fas fa-star-half-alt text-warning me-1"></i>`;
+          }
+          for (let i = 0; i < emptyStars; i++) {
+            starsHTML += `<i class="far fa-star text-warning me-1"></i>`;
+          }
+
+          return `
+            <div class="review-item border-bottom pb-4 mb-4 d-flex flex-wrap align-items-start justify-content-between">
+              <div class="d-flex">
+                <img src="${review.image}" alt="${review.name}" class="rounded-circle me-3" width="60" height="60">
+                <div class="user-name">
+                  <h6 class="mb-0 fw-bold">${review.name}</h6>
+                  <small class="text-muted">${review.platform}</small>
+                </div>
+              </div>
+              <div class="ms-5 flex-grow-1">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mt-3 mt-md-0">
+                  <div class="text-warning mb-2">
+                    ${starsHTML}
+                    <span class="fw-bold text-dark ms-2">${review.title}</span>
+                  </div>
+                  <small class="text-muted">${review.date}</small>
+                </div>
+                <p class="fst-italic text-muted mt-2 mb-0">“${review.comment}”</p>
+              </div>
+            </div>
+          `;
+        }).join("");
+
+        reviewsWrapper.innerHTML = reviewsHTML;
+      }
+
+      // === Add to Cart Logic ===
       function addToCart(product, quantity) {
         let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
         const id = product.id.toString();

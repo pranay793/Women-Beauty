@@ -74,8 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
           col.setAttribute("data-brand", product.brand || product.title.split(" ")[0]);
           col.setAttribute("data-availability", availability);
 
-          const isInCart = cartItems.includes(product.id);
-          const isInWishlist = wishlistItems.includes(product.id);
+          const isInCart = cartItems.some(id => id === product.id || (typeof id === "object" && id.id === product.id));
+          const isInWishlist = wishlistItems.some(id => id === product.id || (typeof id === "object" && id.id === product.id));
 
           const rating = product.rating || 0;
           const fullStars = Math.floor(rating);

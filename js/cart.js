@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
       subtotal += product.price * (item?.quantity || 1);
     });
 
-    subtotalEl.textContent = `₹${subtotal.toFixed(2)}`;
-    totalEl.textContent = `₹${subtotal.toFixed(2)}`;
+    subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+    totalEl.textContent = `$${subtotal.toFixed(2)}`;
   }
 
   function renderCart(products) {
@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!products.length || !cartItems.length) {
       cartTableBody.innerHTML = `<tr><td colspan="4" class="text-center py-5">Your cart is empty.</td></tr>`;
-      subtotalEl.textContent = "₹0.00";
-      totalEl.textContent = "₹0.00";
+      subtotalEl.textContent = "$0.00";
+      totalEl.textContent = "$0.00";
       return;
     }
 
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <span>${product.title}</span>
           </div>
         </td>
-        <td class="text-center">₹${product.price.toFixed(2)}</td>
+        <td class="text-center">$${product.price.toFixed(2)}</td>
         <td class="text-center">
           <div class="d-flex justify-content-center align-items-center gap-2">
             <button class="btn btn-sm btn-outline-secondary qty-btn" data-id="${product.id}" data-action="decrease">–</button>
