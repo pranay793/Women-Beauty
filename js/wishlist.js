@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <button class="btn btn-sm btn-outline-danger remove-btn" data-id="${product.id}">
                     <i class="fas fa-trash"></i> Remove
                   </button>
-                  <button class="btn btn-sm btn-outline-primary cart-btn" data-id="${product.id}">
+                  <button class="btn btn-sm btn-outline-primary cart-btn2" data-id="${product.id}">
                     <i class="fas fa-shopping-cart"></i> Add to Cart
                   </button>
                 </div>
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
   
         // Add to Cart
-        document.querySelectorAll(".cart-btn").forEach(btn => {
+        document.querySelectorAll(".cart-btn2").forEach(btn => {
           btn.addEventListener("click", () => {
             const id = parseInt(btn.getAttribute("data-id"));
             if (!cartItems.includes(id)) {

@@ -1,5 +1,9 @@
 let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 let wishlistItems = JSON.parse(localStorage.getItem("wishlistItems")) || [];
+
+// 🔧 Normalize wishlist to IDs only
+wishlistItems = wishlistItems.map(item => typeof item === "object" ? item.id : item);
+
 let allProducts = [];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -75,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
           col.setAttribute("data-availability", availability);
 
           const isInCart = cartItems.some(id => id === product.id || (typeof id === "object" && id.id === product.id));
-          const isInWishlist = wishlistItems.some(id => id === product.id || (typeof id === "object" && id.id === product.id));
+          const isInWishlist = wishlistItems.includes(product.id);
 
           const rating = product.rating || 0;
           const fullStars = Math.floor(rating);
@@ -113,22 +117,28 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
           `;
 
+          // ✅ Wishlist button logic (fixed)
           const wishlistBtn = col.querySelector(".wishlist-btn");
           wishlistBtn.addEventListener("click", (e) => {
             e.preventDefault();
             e.stopPropagation();
-            wishlistBtn.classList.toggle("active");
 
-            if (wishlistBtn.classList.contains("active")) {
-              if (!wishlistItems.includes(product.id)) wishlistItems.push(product.id);
+            const productId = product.id;
+            const index = wishlistItems.findIndex(id => id === productId);
+
+            if (index === -1) {
+              wishlistItems.push(productId);
+              wishlistBtn.classList.add("active");
             } else {
-              wishlistItems = wishlistItems.filter(id => id !== product.id);
+              wishlistItems.splice(index, 1);
+              wishlistBtn.classList.remove("active");
             }
 
             localStorage.setItem("wishlistItems", JSON.stringify(wishlistItems));
             updateCounts();
           });
 
+          // ✅ Cart button logic (unchanged)
           const cartBtn = col.querySelector(".cart-btn");
           cartBtn.addEventListener("click", (e) => {
             e.preventDefault();
