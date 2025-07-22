@@ -1,312 +1,879 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "title": "Swiss Beauty Highlighting Primer",
-        "image": "images/product-img1.png",
-        "brand": "Swiss Beauty",
-        "price": 33.30, 
-        "rating": 4.5,
-        "custshow": 200,
-        "soldpro": 30,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img1.png" },
-          { "id": 2, "url": "images/product-img1-a.png" },
-          { "id": 3, "url": "images/product-img1-b.png" },
-          { "id": 4, "url": "images/product-img1-c.png" }
-        ], 
-        "handle": "Swiss Beauty"
-      },
-
-      {
-        "id": 2,
-        "title": "Lakmē Skin Dew Primer",
-        "image": "images/product-img2.png",
-        "brand": "Lakmē",
-        "price": 25.50,
-        "rating": 3.5,
-        "custshow": 118,
-        "soldpro": 22,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img2.png" },
-          { "id": 2, "url": "images/product-img2-a.png" },
-          { "id": 3, "url": "images/product-img2-b.png" },
-          { "id": 4, "url": "images/product-img2-c.png" }
-        ], 
-        "handle": "Lakmē"
-      },
-      {
-        "id": 3,
-        "title": "Swiss Beauty Airbrush Foundation",
-        "image": "images/product-img3.png",
-        "brand": "Swiss Beauty",
-        "price": 45.78,
-        "rating": 5,
-        "custshow": 250,
-        "soldpro": 56,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img3.png" },
-          { "id": 2, "url": "images/product-img3-a.png" },
-          { "id": 3, "url": "images/product-img3-b.png" },
-          { "id": 4, "url": "images/product-img3-c.png" }
-        ], 
-        "handle": "Dot & Key"
-      },
-      {
-        "id": 4,
-        "title": "Lakmē Dewy Overnight Gel",
-        "image": "images/product-img4.png",
-        "brand": "Lakmē",
-        "price": 53.89,
-        "rating": 4.5,
-        "custshow": 180,
-        "soldpro": 15,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img4.png" },
-          { "id": 2, "url": "images/product-img4-a.png" },
-          { "id": 3, "url": "images/product-img4-b.png" },
-          { "id": 4, "url": "images/product-img4-c.png" }
-        ], 
-        "handle": "Lakmē"
-      },
-      {
-        "id": 5,
-        "title": "Dior Sauvage Parfum",
-        "image": "images/product-img5.png",
-        "brand": "Dior",
-        "price": 89.00,
-        "rating": 4,
-        "custshow": 220,
-        "soldpro": 44,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img5.png" },
-          { "id": 2, "url": "images/product-img5-a.png" },
-          { "id": 3, "url": "images/product-img5-b.png" },
-          { "id": 4, "url": "images/product-img5-c.png" }
-        ], 
-        "handle": "Dior"
-      },
-      {
-        "id": 6,
-        "title": "Dior Prestige Le Concentré Yeux",
-        "image": "images/product-img6.png",
-        "brand": "Dior",
-        "price": 78.99,
-        "rating": 3.5,
-        "custshow": 156,
-        "soldpro": 22,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img6.png" },
-          { "id": 2, "url": "images/product-img6-a.png" },
-          { "id": 3, "url": "images/product-img6-b.png" },
-          { "id": 4, "url": "images/product-img6-c.png" }
-        ], 
-        "handle": "Dior"
-      },
-      {
-        "id": 7,
-        "title": "M·A·C Matte Lipstick",
-        "image": "images/product-img7.png",
-        "brand": "M·A·C",
-        "price": 56.00,
-        "rating": 5,
-        "custshow": 116,
-        "soldpro": 11,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img7.png" },
-          { "id": 2, "url": "images/product-img7-a.png" },
-          { "id": 3, "url": "images/product-img7-b.png" },
-          { "id": 4, "url": "images/product-img7-c.png" }
-        ], 
-        "handle": "M·A·C"
-      },
-      {
-        "id": 8,
-        "title": "M·A·C Plus Foundation",
-        "image": "images/product-img8.png",
-        "brand": "M·A·C",
-        "price": 43.00,
-        "rating": 3.5,
-        "custshow": 170,
-        "soldpro": 22,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img8.png" },
-          { "id": 2, "url": "images/product-img8-a.png" },
-          { "id": 3, "url": "images/product-img8-b.png" },
-          { "id": 4, "url": "images/product-img8-c.png" }
-        ], 
-        "handle": "M·A·C"
-      },
-      {
-        "id": 9,
-        "title": "M·A·C Fix+ Matte",
-        "image": "images/product-img9.png",
-        "brand": "M·A·C",
-        "price": 22.00,
-        "rating": 4.5,
-        "custshow": 115,
-        "soldpro": 30,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img9.png" },
-          { "id": 2, "url": "images/product-img9-a.png" },
-          { "id": 3, "url": "images/product-img9-b.png" },
-          { "id": 4, "url": "images/product-img9-c.png" }
-        ], 
-        "handle": "M·A·C"
-      },
-      {
-        "id": 10,
-        "title": "Sugar Acid Sunscreen Gel",
-        "image": "images/product-img10.png",
-        "brand": "Sugar",
-        "price": 43.00,
-        "rating": 5,
-        "custshow": 135,
-        "soldpro": 25,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img10.png" },
-          { "id": 2, "url": "images/product-img10-a.png" },
-          { "id": 3, "url": "images/product-img10-b.png" },
-          { "id": 4, "url": "images/product-img10-c.png" }
-        ], 
-        "handle": "Sugar"
-      },
-      {
-        "id": 11,
-        "title": "Sugar Transferproof Foundation",
-        "image": "images/product-img11.png",
-        "brand": "Sugar",
-        "price": 43.00,
-        "rating": 3,
-        "custshow": 122,
-        "soldpro": 40,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img11.png" },
-          { "id": 2, "url": "images/product-img11-a.png" },
-          { "id": 3, "url": "images/product-img11-b.png" },
-          { "id": 4, "url": "images/product-img11-c.png" }
-        ], 
-        "handle": "Sugar"
-      },
-      {
-        "id": 12,
-        "title": "Lakmē 9 to 5 CC Cream ",
-        "image": "images/product-img12.png",
-        "brand": "Lakmē",
-        "price": 43.00,
-        "rating": 4.5,
-        "custshow": 180,
-        "soldpro": 20,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img12.png" },
-          { "id": 2, "url": "images/product-img12-a.png" },
-          { "id": 3, "url": "images/product-img12-b.png" },
-          { "id": 4, "url": "images/product-img12-c.png" }
-        ], 
-        "handle": "Lakmē"
-      },
-      {
-        "id": 13,
-        "title": "Dot & Key Moisturizer Skin",
-        "image": "images/product-img13.png",
-        "brand": "Dot&Key",
-        "price": 73.00,
-        "rating": 5,
-        "custshow": 235,
-        "soldpro": 69,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img13.png" },
-          { "id": 2, "url": "images/product-img13-a.png" },
-          { "id": 3, "url": "images/product-img13-b.png" },
-          { "id": 4, "url": "images/product-img13-c.png" }
-        ], 
-        "handle": "Dot & Key"
-      },
-      {
-        "id": 14,
-        "title": "Dot & Key Barrier Repair Moisturizer",
-        "image": "images/product-img14.png",
-        "brand": "Dot&Key",
-        "price": 57.19,
-        "rating": 3.5,
-        "custshow": 180,
-        "soldpro": 20,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img14.png" },
-          { "id": 2, "url": "images/product-img14-a.png" },
-          { "id": 3, "url": "images/product-img14-b.png" },
-          { "id": 4, "url": "images/product-img14-c.png" }
-        ], 
-        "handle": "Dot & Key"
-      },
-      {
-        "id": 15,
-        "title": "BEILI Brush Collection",
-        "image": "images/product-img15.png",
-        "brand": "BEILI",
-        "price": 57.19,
-        "rating": 4.5,
-        "custshow": 187,
-        "soldpro": 34,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img15.png" },
-          { "id": 2, "url": "images/product-img15-a.png" },
-          { "id": 3, "url": "images/product-img15-b.png" },
-          { "id": 4, "url": "images/product-img15-c.png" }
-        ], 
-        "handle": "BEILI"
-      },
-      {
-        "id": 16,
-        "title": "Sugar Matte Setting Mist",
-        "image": "images/product-img16.png",
-        "brand": "Sugar",
-        "price": 57.19,
-        "rating": 4,
-        "custshow": 223,
-        "soldpro": 40,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img16.png" },
-          { "id": 2, "url": "images/product-img16-a.png" },
-          { "id": 3, "url": "images/product-img16-b.png" },
-          { "id": 4, "url": "images/product-img16-c.png" }
-        ], 
-        "handle": "Sugar"
-      },
-      {
-        "id": 17,
-        "title": "Swiss Beauty Holographic Eyeliner",
-        "image": "images/product-img17.png",
-        "brand": "Swiss Beauty",
-        "price": 57.19,
-        "rating": 4.5,
-        "custshow": 200,
-        "soldpro": 45,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img17.png" },
-          { "id": 2, "url": "images/product-img17-a.png" },
-          { "id": 3, "url": "images/product-img17-b.png" },
-          { "id": 4, "url": "images/product-img17-c.png" }
-        ], 
-        "handle": "Swiss Beauty"
-      },
-      {
-        "id": 18,
-        "title": "Dot & Key Hydrating Gel",
-        "image": "images/product-img18.png",
-        "brand": "Dot&Key",
-        "price": 57.19,
-        "rating": 5,
-        "custshow": 185,
-        "soldpro": 28,
-        "imageArray": [
-          { "id": 1, "url": "images/product-img18.png" },
-          { "id": 2, "url": "images/product-img18-a.png" },
-          { "id": 3, "url": "images/product-img18-b.png" },
-          { "id": 4, "url": "images/product-img18-c.png" }
-        ], 
-        "handle": "Dot & Key"
-      }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "title": "Swiss Beauty Highlighting Primer",
+      "image": "images/product-img1.png",
+      "brand": "Swiss Beauty",
+      "price": 33.30, 
+      "rating": 4.5,
+      "custshow": 200, 
+      "soldpro": 30,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img1.png" },
+        { "id": 2, "url": "images/product-img1-a.png" },
+        { "id": 3, "url": "images/product-img1-b.png" },
+        { "id": 4, "url": "images/product-img1-c.png" }
+      ], 
+      "handle": "Swiss Beauty",
+      "description": ["This lightweight highlighting primer by Swiss Beauty blends seamlessly into your skin, giving it a luminous glow while prepping it for flawless makeup application."],
+      "whyChooseUs": ["Swiss Beauty stands for affordability, quality, and elegance. Our products are dermatologically tested, cruelty-free, and designed for Indian skin tones and climate."],
+      "sustainabilityCare": "We use eco-conscious packaging and sustainable ingredient sourcing wherever possible. Always patch test. Store in a cool, dry place. Recycle after use.",
+      "reviews": [
+  {
+    "name": "Lori Ingle",
+    "platform": "Google",
+    "image": "images/review-icon1.jpg",
+    "rating": 5,
+    "title":"Highlighting Primer",
+    "date": "17-07-2025",
+    "comment": "Absolutely love the texture and finish. Works like magic under my foundation."
+  },
+  {
+    "name": "Sneha Kapoor",
+    "platform": "Instagram", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Swiss Beauty Highlighting Primer",
+    "date": "15-07-2025",
+    "comment": "Gives a great glow without looking oily. Definitely buying again!"
   }
-  
+]
+    },
+
+    {
+      "id": 2,
+      "title": "Lakmē Skin Dew Primer",
+      "image": "images/product-img2.png",
+      "brand": "Lakmē",
+      "price": 25.50,
+      "rating": 3.5,
+      "custshow": 118,
+      "soldpro": 22,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img2.png" },
+        { "id": 2, "url": "images/product-img2-a.png" },
+        { "id": 3, "url": "images/product-img2-b.png" },
+        { "id": 4, "url": "images/product-img2-c.png" }
+      ], 
+      "handle": "Lakmē",
+      "description": ["A luxurious serum‑primer hybrid that combines the nourishing feel of a moisturizer with the smooth finish of a primer."],
+      "whyChooseUs": ["We handpick every product to meet the highest standards of safety, efficacy, and luxury—so you only get the best for your skin and style."],
+      "sustainabilityCare": "We believe in creating a positive impact beyond skin-deep beauty. That’s why our sustainability efforts are at the heart of everything",
+      "reviews": [
+  {
+    "name": "Nikita Sharma",
+    "platform": "Instagram",
+    "image": "images/review-icon1.jpg",
+    "rating": 5,
+    "title":"Dewy but not oily.",
+    "date": "12-07-2025",
+    "comment": "It gives a really fresh, radiant finish without making my skin shiny."
+  },
+  {
+    "name": "Aisha Verma",
+    "platform": "Facebook", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Feels like skincare!",
+    "date": "11-07-2025",
+    "comment": "Gives a great glow without looking oily. Definitely buying again!"
+  },
+  {
+    "name": "Payel Sen",
+    "platform": "Google", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4,
+    "title":"Feels like skincare!",
+    "date": "11-07-2025",
+    "comment": "I have dry skin and most primers either cling to dry patches or feel greasy—but this one is perfect!"
+  }
+]
+    },
+    {
+      "id": 3,
+      "title": "Swiss Beauty Airbrush Foundation",
+      "image": "images/product-img3.png",
+      "brand": "Swiss Beauty",
+      "price": 45.78,
+      "rating": 5,
+      "custshow": 250,
+      "soldpro": 56,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img3.png" },
+        { "id": 2, "url": "images/product-img3-a.png" },
+        { "id": 3, "url": "images/product-img3-b.png" },
+        { "id": 4, "url": "images/product-img3-c.png" }
+      ], 
+      "handle": "Swiss Beauty",
+      "description": ["Swiss Beauty’s Airbrush Finish Full Coverage Foundation is designed to deliver a flawless, airbrushed matte look without the heaviness. It offers full coverage, lightweight wear, and a waterproof formula that stays put for up to 8 hours, with a natural, matte finish—perfect for everyday use or special occasions"],
+      "whyChooseUs": ["We curate only the best-rated and dermatologist-approved beauty essentials—no compromise on performance or safety."],
+      "sustainabilityCare": "Our products use recyclable and minimal packaging to reduce environmental impact.",
+      "reviews": [
+  {
+    "name": "Ananya Sharma",
+    "platform": "Google",
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Blends Like a Dream!",
+    "date": "05-07-2025",
+    "comment": "Absolutely loved the texture of this foundation. Gives an airbrushed finish without feeling heavy."
+  },
+  {
+    "name": "Priya Mehra",
+    "platform": "Amazon", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Great Coverage at a Great Price",
+    "date": "10-07-2025",
+    "comment": "This product gives me great coverage for my acne marks."
+  }
+]
+    },
+    {
+      "id": 4,
+      "title": "Lakmē Dewy Overnight Gel",
+      "image": "images/product-img4.png",
+      "brand": "Lakmē",
+      "price": 53.89,
+      "rating": 4.5,
+      "custshow": 180,
+      "soldpro": 15,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img4.png" },
+        { "id": 2, "url": "images/product-img4-a.png" },
+        { "id": 3, "url": "images/product-img4-b.png" },
+        { "id": 4, "url": "images/product-img4-c.png" }
+      ], 
+      "handle": "Lakmē",
+      "description": ["This luxurious overnight gel is formulated for intense skin hydration while you sleep. Infused with Hyaluronic Acid and an HA‑PENTA complex, it delivers deep, 24-hour moisturization to wake up with plump, refreshed skin"],
+      "whyChooseUs": ["With a growing community of happy customers, our products are designed to deliver real results — beautifully and consistently."],
+      "sustainabilityCare": "Our products are thoughtfully crafted with environmentally friendly ingredients, minimizing ecological impact while maximizing results.",
+      "reviews": [
+  {
+    "name": "Anjali Mehta",
+    "platform": "Amazon",
+    "image": "images/review-icon1.jpg",
+    "rating": 4,
+    "title":"Gives a natural glow!",
+    "date": "02-07-2025",
+    "comment": "Loved how lightweight and dewy this product feels. My skin looks fresh"
+  },
+  {
+    "name": "Riya Shah",
+    "platform": "Nykaa", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.0,
+    "title":"Perfect for daily wear",
+    "date": "10-07-2025",
+    "comment": "I use this every morning before sunscreen. It smooths out my skin."
+  },
+  {
+    "name": "Sneha Kapoor",
+    "platform": "Google", 
+    "image": "images/review-icon1.jpg",
+    "rating": 5,
+    "title":"Hydrating and long-lasting!",
+    "date": "10-07-2025",
+    "comment": "This product surprised me! It kept my skin hydrated for hours and gave a beautiful natural finish."
+  }
+]
+    },
+    {
+      "id": 5,
+      "title": "Dior Sauvage Parfum",
+      "image": "images/product-img5.png",
+      "brand": "Dior",
+      "price": 89.00,
+      "rating": 4,
+      "custshow": 220,
+      "soldpro": 44,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img5.png" },
+        { "id": 2, "url": "images/product-img5-a.png" },
+        { "id": 3, "url": "images/product-img5-b.png" },
+        { "id": 4, "url": "images/product-img5-c.png" }
+      ], 
+      "handle": "Dior",
+      "description": ["Dior Sauvage Parfum is a highly concentrated interpretation of the original Sauvage, blending extreme freshness with warm ambery tones—all wrapped in a rich, intoxicating trail inspired by a crackling fire under moonlit skies. It evokes vast, untamed landscapes and rugged elegance."],
+      "whyChooseUs": ["We source only the finest ingredients and authentic products—ensuring quality you can trust, every time you shop with us."],
+      "sustainabilityCare": "At the heart of our mission is a commitment to sustainability and conscious care.",
+      "reviews": [
+  {
+    "name": "Diksha Singh",
+    "platform": "Google",
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"A classic that could never go wrong",
+    "date": "05-06-2025",
+    "comment": "I’m obsessed with Dior Sauvage! I gifted this to my boyfriend… it’s so fresh and energetic"
+  },
+  {
+    "name": "Priya Rathi",
+    "platform": "Fragrantica", 
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Masterful Blend of Freshness & Depth",
+    "date": "18-05-2025",
+    "comment": "Opening is beautiful—citrusy and fresh with classic Sauvage DNA."
+  },
+  {
+    "name": "Kunal Roy",
+    "platform": "Reddit", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Bold, Smooth & Compliment Magnet",
+    "date": "15-07-2025",
+    "comment": "Sauvage Parfum is the king in my collection. Starts fresh and citrusy, dries down to warm vanilla and wood."
+  },
+  {
+    "name": "Ramesh D.",
+    "platform": "Reddit", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Bold, Smooth & Compliment Magnet",
+    "date": "12-01-2025",
+    "comment": "The creamy orange note with dense sandalwood makes this ideal for cold nights."
+  }
+]
+    },
+    {
+      "id": 6,
+      "title": "Dior Prestige Le Concentré Yeux",
+      "image": "images/product-img6.png",
+      "brand": "Dior",
+      "price": 78.99,
+      "rating": 3.5,
+      "custshow": 156,
+      "soldpro": 22,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img6.png" },
+        { "id": 2, "url": "images/product-img6-a.png" },
+        { "id": 3, "url": "images/product-img6-b.png" },
+        { "id": 4, "url": "images/product-img6-c.png" }
+      ], 
+      "handle": "Dior",
+      "description": ["Dior Prestige Le Concentré Yeux is a luxurious anti-aging eye cream designed to visibly reverse four major signs of aging around the eye area—lifting the upper eyelid and cheekbone, smoothing crow’s feet, and correcting the tear trough (dark circles and puffiness). Infused with Rosapeptide™ and yeast extract, the formula works synergistically to revitalize and illuminate the eye contour. It features a wax-to-cream texture that melts into the skin for up to 24 hours of hydration and comes with Dior’s signature dual-rotating “Open-Eye” applicator that enhances results the longer you use it. After one month, 96% of women reported that their eyes appeared more open and refreshed."],
+      "whyChooseUs": ["Unmatched Expertise – Developed using Dior’s exclusive Rosapeptide™ technology, leveraging the rare Rose de Granville and advanced peptides to target fatigue and aging."],
+      "sustainabilityCare": "Luxury with Responsibility – Comes in a refillable jar, reducing waste and supporting sustainable consumption.",
+      "reviews": [
+  {
+    "name": "Geordie",
+    "platform": "Google",
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Amazing product",
+    "date": "03-03-2025",
+    "comment": "Beautiful product, well worth the money! I hardly need any at all."
+  },
+  {
+    "name": "Chan1x",
+    "platform": "Fragrantica", 
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Instant tightening & glow",
+    "date": "06-02-2025",
+    "comment": "Instant firming sensation and improved softness. My dark circles improved massively"
+  },
+  {
+    "name": "Beverley Toni",
+    "platform": "Amazon", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4,
+    "title":"Amazing eye cream",
+    "date": "11-05-2025",
+    "comment": "After a couple of months of use, the skin around my eyes looks brighter and smoother."
+  }
+]
+    },
+    {
+      "id": 7,
+      "title": "M·A·C Matte Lipstick",
+      "image": "images/product-img7.png",
+      "brand": "M·A·C",
+      "price": 56.00,
+      "rating": 5,
+      "custshow": 116,
+      "soldpro": 11,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img7.png" },
+        { "id": 2, "url": "images/product-img7-a.png" },
+        { "id": 3, "url": "images/product-img7-b.png" },
+        { "id": 4, "url": "images/product-img7-c.png" }
+      ], 
+      "handle": "M·A·C",
+      "description": ["M·A·C’s Matte Lipstick delivers pigment‑rich, full‑coverage matte color with a signature vanilla scent and a velvety-smooth texture. Though it is matte, the formula is designed to be creamy and comfortable—many shades glide on softly and last 4–6 hours, sometimes longer with prep and touch‑ups."],
+      "whyChooseUs": ["Expertly Curated Shades – We offer the most iconic M·A·C shades, renowned for their depth, versatility, and timeless appeal."],
+      "sustainabilityCare": "Improved Eco-Packaging – Many M·A·C lipstick cases now feature at least 30% PCR (post-consumer recycled) material, aligning with our commitment to sustainability.",
+      "reviews": [
+  {
+    "name": "Meenakshi Tripathi",
+    "platform": "Nykaa",
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Beautiful nude for fair to medium tones",
+    "date": "11-04-2025",
+    "comment": "Beautiful product, well worth the money! I hardly need any at all."
+  },
+  {
+    "name": "Ishita Singh",
+    "platform": "Beauty Blog", 
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Silky, long wearing and hydrating",
+    "date": "15-01-2025",
+    "comment": "MAC’s Silky Matte line glides on seamlessly, lasts over 8–12 hours, and feels moisturizing thanks"
+  }
+]
+    },
+    {
+      "id": 8,
+      "title": "M·A·C Plus Foundation",
+      "image": "images/product-img8.png",
+      "brand": "M·A·C",
+      "price": 43.00,
+      "rating": 3.5,
+      "custshow": 170,
+      "soldpro": 22,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img8.png" },
+        { "id": 2, "url": "images/product-img8-a.png" },
+        { "id": 3, "url": "images/product-img8-b.png" },
+        { "id": 4, "url": "images/product-img8-c.png" }
+      ], 
+      "handle": "M·A·C",
+      "description": ["A cult-favorite pressed powder foundation offering buildable, medium-to-full coverage with an ultra-matte, velvety finish. It blurs imperfections, stays put up to 12 hours, resists creasing or streaking, and keeps shine under control. Specifically designed to be breathable yet long-wearing—even in heat and humidity."],
+      "whyChooseUs": ["Delivers a flawless matte look that lasts all day—ideal for busy days, oily skin, or humid weather."],
+      "sustainabilityCare": "Includes talc and silica for optimal oil control and vitamin E for antioxidant benefits—ensuring breathability and smoothness.",
+      "reviews": [
+  {
+    "name": "Jessika J",
+    "platform": "Influenster",
+    "image": "images/review-icon1.jpg",
+    "rating": 3.5,
+    "title":"My Go-To for Everyday Full Coverage",
+    "date": "12-02-2025",
+    "comment": "This is one of those rare products that actually lives up to the hype. It's a one-step hero!"
+  },
+  {
+    "name": "mrpotts69",
+    "platform": "ProductReview.com.au", 
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Oil Control That Lasts All Day!",
+    "date": "15-04-2025",
+    "comment": "Full coverage all day wear! I use it over liquid foundation to set and lock everything in place."
+  },
+  {
+    "name": "Lari405",
+    "platform": "MakeupAlley", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Perfect Matte Finish Without the Cakey Look",
+    "date": "15-04-2025",
+    "comment": "Powder foundations generally don’t suit my skin, but this is the best I’ve tried."
+  }
+]
+    },
+    {
+      "id": 9,
+      "title": "M·A·C Fix+ Matte",
+      "image": "images/product-img9.png",
+      "brand": "M·A·C",
+      "price": 22.00,
+      "rating": 4.5,
+      "custshow": 115,
+      "soldpro": 30,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img9.png" },
+        { "id": 2, "url": "images/product-img9-a.png" },
+        { "id": 3, "url": "images/product-img9-b.png" },
+        { "id": 4, "url": "images/product-img9-c.png" }
+      ], 
+      "handle": "M·A·C",
+      "description": ["What it is: A lightweight, mattifying spray that controls shine, sets makeup, and refreshes skin—without disrupting your look. Ideal as a pre- or post-makeup mattifying mist."],
+      "whyChooseUs": ["Total Shine Control – Instantly reduces oil and visible pores while providing a fresh, matte finish that lasts."],
+      "sustainabilityCare": "Cruelty-Free Ethos – Aligned with M·A·C’s commitment: no animal testing and compliant with ethical production.",
+      "reviews": [
+  {
+    "name": "Priya Desai",
+    "platform": "Amazon",
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Matte Without the Dryness",
+    "date": "07-06-2025",
+    "comment": "Controls shine all day without drying my skin. Feels refreshing and lightweight, even in humid weather."
+  },
+  {
+    "name": "Arjun Mehta",
+    "platform": "Beauty Enthusiast", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.0,
+    "title":"Great Touch-Up Spray",
+    "date": "11-03-2025",
+    "comment": "I use it midday to tone down shine—works well, but I top with a setting spray for longer stay."
+  },
+  {
+    "name": "Sneha Kapoor",
+    "platform": "Makeup Artist", 
+    "image": "images/review-icon1.jpg",
+    "rating": 5,
+    "title":"Primer & Setting Spray in One",
+    "date": "13-05-2025",
+    "comment": "Spray before and after—makes powder look skin-like and sets everything flawlessly."
+  },
+  {
+    "name": "Devika Rao",
+    "platform": "Google", 
+    "image": "images/review-icon1.jpg",
+    "rating": 3.5,
+    "title":"Good, Not Gospel",
+    "date": "13-05-2025",
+    "comment": "Helps my makeup melt into my skin and sets it nicely—though on super hot days!"
+  }
+]
+    },
+    {
+      "id": 10,
+      "title": "Sugar Acid Sunscreen Gel",
+      "image": "images/product-img10.png",
+      "brand": "Sugar",
+      "price": 43.00,
+      "rating": 5,
+      "custshow": 135,
+      "soldpro": 25,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img10.png" },
+        { "id": 2, "url": "images/product-img10-a.png" },
+        { "id": 3, "url": "images/product-img10-b.png" },
+        { "id": 4, "url": "images/product-img10-c.png" }
+      ], 
+      "handle": "Sugar",
+      "description": ["Sugar Tan Ban Hyaluronic Acid Sunscreen Gel SPF 50+ PA+++ is a gel-based sunscreen with a primer-like texture that delivers invisible, broad-spectrum UV protection with zero white cast. This breathable, water- and sweat-resistant formula blurs pores, smooths fine lines, and hydrates deeply thanks to hyaluronic acid and liquorice extract. It glides on lightweight and dries to a velvety matte finish—ideal for both makeup prep and sun protection on the go."],
+      "whyChooseUs": ["Suitable for all skin types (including sensitive), non-comedogenic, cruelty-free, vegan, and free of parabens, mineral oil, and added fragrance."],
+      "sustainabilityCare": "Committed to being vegan and cruelty-free, with transparent ingredient sourcing and ethical manufacturing.",
+      "reviews": [
+  {
+    "name": "Bansi Patel",
+    "platform": "Amazon",
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Non-sticky and quick absorbing",
+    "date": "20-05-2025",
+    "comment": "This gel feels lightweight and dries fast. No white cast, keeps me matte in humid weather!"
+  },
+  {
+    "name": "Sapna S.",
+    "platform": "Google", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.0,
+    "title":"Blurs pores and hydrates well",
+    "date": "10-02-2025",
+    "comment": "It smooths out my skin nicely and hydrates. Just be careful if your skin leans oily"
+  },
+  {
+    "name": "Jyoti P",
+    "platform": "Makeup Artist", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.3,
+    "title":"Invisible but protective",
+    "date": "11-01-2025",
+    "comment": "Really liked how it absorbed into my skin with zero residue. Felt protected and lightweight"
+  }
+]
+    },
+    {
+      "id": 11,
+      "title": "Sugar Transferproof Foundation",
+      "image": "images/product-img11.png",
+      "brand": "Sugar",
+      "price": 43.00,
+      "rating": 3,
+      "custshow": 122,
+      "soldpro": 40,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img11.png" },
+        { "id": 2, "url": "images/product-img11-a.png" },
+        { "id": 3, "url": "images/product-img11-b.png" },
+        { "id": 4, "url": "images/product-img11-c.png" }
+      ], 
+      "handle": "Sugar",
+      "description": ["SUGAR Matte Match Transferproof Foundation is a full-coverage, long-wear liquid foundation designed for up to 24 hours of flawless matte wear. Lightweight and breathable, it delivers a soft-matte finish that blurs pores, fine lines, and imperfections. Waterproof, sweat-resistant, and made to feel weightless on your skin, it’s ideal for Indian climates, oily or combination skin types, and those who want no-touch-up confidence.It also features antioxidant-rich moisturizing actives to nourish without oiliness. Fragrance-free, alcohol-free, and completely vegan."],
+      "whyChooseUs": ["Exceptional 24-Hour Wear: Transferproof, waterproof, and fade-resistant—your base stays immaculate even in sweat or rain.SUGAR Cosmetics+3"],
+      "sustainabilityCare": "Ethical & Transparent: Adheres to vegan, cruelty-free standards, with clean formulations—no fragrance or alcohol.",
+      "reviews": [
+  {
+    "name": "Amisha Samanta",
+    "platform": "SUGAR Cosmetics",
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Longwear That Actually Lasts",
+    "date": "04-04-2025",
+    "comment": "Nice coverage. Feels super lightweight yet lasts all day. Transfers zero."
+  },
+  {
+    "name": "Mehak Bhogia",
+    "platform": "Nykaa", 
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Smooth Finish, Needs Setting Powder",
+    "date": "16-03-2025",
+    "comment": "Fabulous texture—light and blends easily. Gives medium to high coverage."
+  },
+  {
+    "name": "Rohit Pandit",
+    "platform": "Amazon", 
+    "image": "images/review-icon1.jpg",
+    "rating": 3.5,
+    "title":"True Matte for Oily Skin!",
+    "date": "27-02-2025",
+    "comment": "I have super oily skin, and this is the only foundation that stays matte and doesn’t move."
+  }
+]
+    },
+    {
+      "id": 12,
+      "title": "Lakmē 9 to 5 CC Cream",
+      "image": "images/product-img12.png",
+      "brand": "Lakmē",
+      "price": 43.00,
+      "rating": 4.5,
+      "custshow": 180,
+      "soldpro": 20,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img12.png" },
+        { "id": 2, "url": "images/product-img12-a.png" },
+        { "id": 3, "url": "images/product-img12-b.png" },
+        { "id": 4, "url": "images/product-img12-c.png" }
+      ], 
+      "handle": "Lakmē",
+      "description": ["Lakmé’s 9 to 5 Complexion Care CC Cream combines skincare and makeup in one easy step. It offers medium, breathable coverage, SPF 30 PA++ protection, and brightening ingredients like Vitamin B3 and Vitamin E. Its creamy yet lightweight texture helps even out skin tone, minimize pores, and leave a natural matte or slightly dewy finish—perfect for daily office or everyday wear in the Indian climate."],
+      "whyChooseUs": ["Effortless Everyday Grooming: Combines moisturizer, tint, and SPF in one go—perfect for busy mornings or minimal makeup routines."],
+      "sustainabilityCare": "Simple, Clean Formula: Though not fragrance-free, the mildly scented formula is lightweight and generally non-irritating; however, it contains sunscreen filters and fatty acids that might not suit extra oily or highly sensitive skin.",
+      "reviews": [
+  {
+    "name": "Nisma Zakir",
+    "platform": "Nykaa",
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Best CC Cream for Daily Wear",
+    "date": "30-01-2025",
+    "comment": "It absorbs fast, feels light, and blends seamlessly. The beige shade is perfect for wheatish skin tone."
+  },
+  {
+    "name": "Saniya Ansari",
+    "platform": "Google", 
+    "image": "images/review-icon1.jpg",
+    "rating": 3.5,
+    "title":"Amazing Blend & Natural Finish",
+    "date": "23-02-2025",
+    "comment": "Beige shade fits perfectly, formula feels smooth, and the finish is natural."
+  }
+]
+    },
+    {
+      "id": 13,
+      "title": "Dot & Key Moisturizer Skin",
+      "image": "images/product-img13.png",
+      "brand": "Dot&Key",
+      "price": 73.00,
+      "rating": 5,
+      "custshow": 235,
+      "soldpro": 69,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img13.png" },
+        { "id": 2, "url": "images/product-img13-a.png" },
+        { "id": 3, "url": "images/product-img13-b.png" },
+        { "id": 4, "url": "images/product-img13-c.png" }
+      ], 
+      "handle": "Dot & Key",
+      "description": ["Dot & Key’s Barrier Repair Moisturizer (Ceramides & Hyaluronic Acid) is designed to support and hydrate the skin barrier with a skin-friendly probiotic formula. Enriched with five essential ceramides, hyaluronic acid, rice water, and probiotic extracts, this lightweight moisturizer deeply hydrates, strengthens, and soothes the skin—making it ideal for dry, normal, sensitive, and combination skin types. It absorbs quickly without feeling heavy or greasy."],
+      "whyChooseUs": ["A scientifically-backed blend of ceramides and probiotics helps restore the skin’s natural barrier and retain moisture effectively."],
+      "sustainabilityCare": "Works safely alongside vitamin C, niacinamide, retinoids, and exfoliating acids for barrier support.",
+      "reviews": [
+  {
+    "name": "Kashish Singh",
+    "platform": "Nykaa",
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Buttery Texture Moisturizer",
+    "date": "24-04-2025",
+    "comment": "I love this product… buttery texture, not heavy, deeply hydrating without feeling sticky."
+  },
+  {
+    "name": "Fatema Kazi",
+    "platform": "Nykaa", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.0,
+    "title":"One-in-All",
+    "date": "13-02-2025",
+    "comment": "Gives ample moisture without heaviness. It hydrates and doesn’t clog pores—suitable."
+  },
+  {
+    "name": "Amazon Customer",
+    "platform": "Amazon", 
+    "image": "images/review-icon1.jpg",
+    "rating": 3.5,
+    "title":"A Game‑Changer for My Skin Routine",
+    "date": "22-06-2025",
+    "comment": "Super light and non-greasy hydration. Absorbs quickly, great for oily/combo skin."
+  },
+  {
+    "name": "Riya Mehra",
+    "platform": "Instagram", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Soothing but Slightly Sticky in Humid Weather",
+    "date": "11-08-2025",
+    "comment": "It really calms my sensitive skin after retinol, and I noticed fewer dry patches."
+  }
+]
+    },
+    {
+      "id": 14,
+      "title": "Dot & Key Barrier Repair Moisturizer",
+      "image": "images/product-img14.png",
+      "brand": "Dot&Key",
+      "price": 57.19,
+      "rating": 3.5,
+      "custshow": 180,
+      "soldpro": 20,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img14.png" },
+        { "id": 2, "url": "images/product-img14-a.png" },
+        { "id": 3, "url": "images/product-img14-b.png" },
+        { "id": 4, "url": "images/product-img14-c.png" }
+      ], 
+      "handle": "Dot & Key",
+      "description": ["Dot & Key Barrier Repair Moisturizer is a deeply hydrating, skin-barrier-strengthening cream enriched with 5 essential ceramides, hyaluronic acid, probiotics, and rice water. Designed to repair compromised skin barriers, it locks in moisture, soothes irritation, and supports long-term skin health. Its lightweight, non-comedogenic texture makes it suitable for dry, sensitive, normal, and combination skin types."],
+      "whyChooseUs": ["Formulated with a potent mix of ceramides, hyaluronic acid, and probiotics to strengthen and soothe the skin barrier."],
+      "sustainabilityCare": "Free from parabens, sulfates, essential oils, and mineral oil. pH-balanced and dermatologist-tested.",
+      "reviews": [
+  {
+    "name": "Aastha Jain",
+    "platform": "Nykaa",
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Perfect for Daily Use",
+    "date": "21-03-2025",
+    "comment": "I have sensitive skin and this moisturizer has worked wonders. It calms redness, absorbs fast."
+  },
+  {
+    "name": "Priya Nair",
+    "platform": "Amazon", 
+    "image": "images/review-icon1.jpg",
+    "rating": 3.0,
+    "title":"Hydration Without Heaviness",
+    "date": "11-01-2025",
+    "comment": "Super light and still manages to hydrate my skin well. It’s perfect under makeup too."
+  },
+  {
+    "name": "Meenakshi Verma",
+    "platform": "Flipkart", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.0,
+    "title":"Calmed My Skin Barrier",
+    "date": "02-04-2025",
+    "comment": "My skin was damaged after over-exfoliating. This cream helped heal and rebalance it."
+  }
+]
+    },
+    {
+      "id": 15,
+      "title": "BEILI Brush Collection",
+      "image": "images/product-img15.png",
+      "brand": "BEILI",
+      "price": 57.19,
+      "rating": 4.5,
+      "custshow": 187,
+      "soldpro": 34,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img15.png" },
+        { "id": 2, "url": "images/product-img15-a.png" },
+        { "id": 3, "url": "images/product-img15-b.png" },
+        { "id": 4, "url": "images/product-img15-c.png" }
+      ], 
+      "handle": "BEILI",
+      "description": ["The BEILI Makeup Brush Collection includes curated sets of 20 or 30 professional brushes, combining natural goat hair, synthetic fibers, and nano wool for ultra-soft performance. Designed to cover all makeup essentials—foundation, powder, concealer, contour, blush, eyeshadow, brow, and liner—these thoughtfully crafted brushes deliver smooth, precise blending and application. Ideal for both makeup beginners and pros seeking variety in one kit."],
+      "whyChooseUs": ["Provides every essential brush in a single kit—foundation, blending, contour, shading, and more—for a complete professional routine."],
+      "sustainabilityCare": "Handles are wooden with water-based paint, non-toxic and designed to resist cracking—even after cleaning.",
+      "reviews": [
+  {
+    "name": "Nikita Patkar",
+    "platform": "Amazon",
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Soft & Beginner-Friendly",
+    "date": "12-01-2025",
+    "comment": "Soft and good quality product. I love this brushes."
+  },
+  {
+    "name": "Riya Das",
+    "platform": "Amazon", 
+    "image": "images/review-icon1.jpg",
+    "rating": 3.5,
+    "title":"Light, Useful, Affordable",
+    "date": "15-05-2025",
+    "comment": "Very light, soft and useful brushes just liked it so much"
+  },
+  {
+    "name": "Kumari Kar",
+    "platform": "Nykaa", 
+    "image": "images/review-icon1.jpg",
+    "rating": 2.5,
+    "title":"Handle Broke During Washing",
+    "date": "02-04-2025",
+    "comment": "The handle of the brushes seems to be breaking when it's the time to wash them… glue is not okay."
+  }
+]
+    },
+    {
+      "id": 16,
+      "title": "Sugar Matte Setting Mist",
+      "image": "images/product-img16.png",
+      "brand": "Sugar",
+      "price": 57.19,
+      "rating": 4,
+      "custshow": 223,
+      "soldpro": 40,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img16.png" },
+        { "id": 2, "url": "images/product-img16-a.png" },
+        { "id": 3, "url": "images/product-img16-b.png" },
+        { "id": 4, "url": "images/product-img16-c.png" }
+      ], 
+      "handle": "Sugar",
+      "description": ["SUGAR’s Grand Finale Matte Setting Mist is a weightless, fine‑mist spray designed to set your makeup for up to 8–12 hours with a matte, shine-free finish. It glides on evenly, controls oil, and offers a soft-radiant look without heaviness or irritation."],
+      "whyChooseUs": ["Keeps makeup intact for hours—no smudging, melting, or transfer. Ideal for humid days or long events."],
+      "sustainabilityCare": "SUGAR adheres strictly to cruelty-free standards—no animal testing anywhere in the chain.",
+      "reviews": [
+  {
+    "name": "Anusha Kallur",
+    "platform": "Nykaa",
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Everyday Matte Hero",
+    "date": "21-02-2025",
+    "comment": "Best affordable makeup fixer ever. It keeps your makeup in place all day. Doesn't dry my skin."
+  },
+  {
+    "name": "Shalini Mukherjee",
+    "platform": "Nykaa", 
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Perfect for Oily Skin",
+    "date": "17-06-2025",
+    "comment": "Combination and breakout-prone skin suited this so well. Matte finish that lasts—a great price too."
+  },
+  {
+    "name": "Hamnah",
+    "platform": "Google", 
+    "image": "images/review-icon1.jpg",
+    "rating": 3.5,
+    "title":"Good Mist, Great Value",
+    "date": "15-05-2025",
+    "comment": "A good setting mist. Spray bottle gives even coverage."
+  },
+  {
+    "name": "Afreen Khan",
+    "platform": "Nykaa", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.0,
+    "title":"Hands Down Favorite",
+    "date": "14-01-2025",
+    "comment": "Best for oily skin—gives a punchy matte finish that stays put. Favorite setting spray of mine."
+  }
+]
+    },
+    {
+      "id": 17,
+      "title": "Swiss Beauty Holographic Eyeliner",
+      "image": "images/product-img17.png",
+      "brand": "Swiss Beauty",
+      "price": 57.19,
+      "rating": 4.5,
+      "custshow": 200,
+      "soldpro": 45,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img17.png" },
+        { "id": 2, "url": "images/product-img17-a.png" },
+        { "id": 3, "url": "images/product-img17-b.png" },
+        { "id": 4, "url": "images/product-img17-c.png" }
+      ], 
+      "handle": "Swiss Beauty",
+      "description": ["Swiss Beauty’s Holographic Eyeliner is a vibrant, color-shifting eyeliner available in six dazzling shades—like Milky Way, Northern Light, and Nebula. With its creamy retractable formula, it glides on smoothly, offering intense holographic shimmer that shifts under different lighting. The waterproof and smudge-proof finish ensures bold, long-lasting wear for parties, reels, and standout looks"],
+      "whyChooseUs": ["Retractable pencil tip eliminates the need for sharpening. Compact and easy to use on the go."],
+      "sustainabilityCare": "While packaging is minimal and recyclable, Swiss Beauty does not currently offer refill or eco-certified formats.",
+      "reviews": [
+  {
+    "name": "Aastha",
+    "platform": "Home Tester Club",
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Loved the Texture and Finish",
+    "date": "13-03-2025",
+    "comment": "The formula glides on smoothly. The holographic shine gives your eyes a unique."
+  },
+  {
+    "name": "Shraddha",
+    "platform": "Nykaa", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Eye shadow and eyeliner in one",
+    "date": "10-06-2025",
+    "comment": "This product has great pigment. It can be used as eyeliner or eyeshadow depending on your look."
+  }
+]
+    },
+    {
+      "id": 18,
+      "title": "Dot & Key Hydrating Gel",
+      "image": "images/product-img18.png",
+      "brand": "Dot&Key",
+      "price": 57.19,
+      "rating": 5,
+      "custshow": 185,
+      "soldpro": 28,
+      "imageArray": [
+        { "id": 1, "url": "images/product-img18.png" },
+        { "id": 2, "url": "images/product-img18-a.png" },
+        { "id": 3, "url": "images/product-img18-b.png" },
+        { "id": 4, "url": "images/product-img18-c.png" }
+      ], 
+      "handle": "Dot & Key",
+      "description": ["A lightweight, oil-free gel moisturizer infused with probiotics, hyaluronic acid, rice water, and ceramides, designed to hydrate and strengthen the skin barrier. The gel texture absorbs quickly, cooling instantly, and provides hydration without grease—ideal for oily, combination, and normal skin types. While labeled for 72‑hour hydration, typical wear lasts up to 4–6 hours depending on skin type. It balances the microbiome, soothes irritation, and reflects skin clarity and smoothness."],
+      "whyChooseUs": ["Enhances your skin’s natural defenses and microbiome health with mild calming benefits."],
+      "sustainabilityCare": "Cruelty-free and made with thoughtfully selected ingredients. Packaging is recyclable where available.",
+      "reviews": [
+  {
+    "name": "Abhisha Patel",
+    "platform": "Nykaa",
+    "image": "images/review-icon1.jpg",
+    "rating": 5.0,
+    "title":"Best for Combination & Oily Skin",
+    "date": "12-04-2025",
+    "comment": "Amazing product, works exactly as expected. Super hydrating yet non-sticky and lightweight."
+  },
+  {
+    "name": "Kauramarjit275",
+    "platform": "Purplle", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.5,
+    "title":"Feather-Light & Cooling",
+    "date": "18-07-2025",
+    "comment": "Very hydrating and non-greasy. Easily absorbed and leaves skin smooth. Ideal for summer hydration."
+  },
+  {
+    "name": "Rohini Sen",
+    "platform": "Google", 
+    "image": "images/review-icon1.jpg",
+    "rating": 4.0,
+    "title":"Holy Grail for Oily Acne-Prone Skin",
+    "date": "18-08-2025",
+    "comment": "Great gel moisturizer for oily skin—similar to Neutrogena Hydro Boost but doesn’t cause breakouts."
+  }
+
+]
+    }
+  ]
+}
