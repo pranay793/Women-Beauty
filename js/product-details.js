@@ -144,7 +144,7 @@ if (reviewEl && Array.isArray(product.reviews)) {
     }
 
     reviewsHTML += `
-      <div class="review-block d-flex justify-content-between align-items-start py-3 border-bottom">
+      <div class="review-block justify-content-between align-items-start py-3 border-bottom">
         <div class="d-flex w-24">
           <img src="${r.image}" alt="${r.name}" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
           <div>

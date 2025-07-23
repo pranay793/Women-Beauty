@@ -1239,3 +1239,111 @@ input[type="range"] {
   padding: 8px 30px;
   font-size: 16px;
 }
+
+
+@media (max-width: 768px) {
+  .hero-slider {
+    flex-direction: column;
+    height: auto;
+  }
+  .badge-new{
+    display: none;
+  }
+  .hero-slider p{
+    font-size: 12px;
+  }
+  .banner-slide h2 {
+    font-size: 24px;
+    padding-top: 40px;
+}
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .slick-banner-slider, .slick-banner-slider .banner-slide{
+    height: auto;
+  }
+  .width-btn {
+    width: 135px;
+    margin-bottom: 40px;
+}
+.about-skin-section {
+  padding: 0px 20px;
+}
+.navbar-nav {
+  margin-bottom: 25px;
+}
+.navbar-nav .nav-item {
+   padding: 0; 
+}
+.promo-banner {
+  background: #f07ca5 url(../images/promotion-bnr-mob.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 11.875rem 0;
+}
+
+}
+
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+}
+
+.review-block{
+  display: flex;
+}
+@media (max-width: 767px) {
+  .review-block{
+    display: block;
+  }
+  .w-24 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+}
+
+.tick-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tick-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.tick-list li::before {
+  content: "\f00c"; /* Font Awesome check icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #28a745; /* Bootstrap green */
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 18px;
+  font-weight: 700;
+}
