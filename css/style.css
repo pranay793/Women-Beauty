@@ -940,7 +940,7 @@ input[type="range"] {
 .home-btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #4CAF50;
+  background-color: #000;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -949,7 +949,8 @@ input[type="range"] {
 }
 
 .home-btn:hover {
-  background-color: #45a049;
+  background-color: #535353;
+  color: #fff;
 }
 /* Fix full width and height of the slider */
 .hero-slider {
@@ -1189,4 +1190,52 @@ input[type="range"] {
   font-size: 20px;
   font-weight: 700;
   padding-bottom: 10px;
+}
+.order-summary{
+  /* border:1px solid #121212; */
+}
+.order-summary h4{
+ background-color: #000;
+ color: #fff;
+ font-size: 26px;
+ font-weight: 700;
+ text-align: center;
+ padding: 10px 0;
+ text-transform: uppercase;
+ border-radius: 10px 10px 0 0;
+}
+.order-summary-con{
+  border:1px solid #000;
+}
+.summary-item img{
+  border:1px solid #000;
+}
+.total-price1 {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.total-price1::before, .total-price1::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #898989;
+}
+.total-price1::before {
+  margin-right: 15px;
+}
+.total-price1::after {
+  margin-left: 15px;
+}
+.total-price1 h3 {
+  text-align: center;
+  color: #898989;
+  font-size: 18px;
+  /* padding-bottom: 20px; */
+}
+.view-btn {
+  border-radius: 0;
+  padding: 8px 30px;
+  font-size: 16px;
 }

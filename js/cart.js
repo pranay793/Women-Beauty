@@ -2,12 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const cartTableBody = document.getElementById("cart-table-body");
   const subtotalEl = document.getElementById("subtotal");
   const totalEl = document.getElementById("total");
-  const checkoutBtn = document.getElementById("proceed-checkout"); // ← new
+  const checkoutBtn = document.getElementById("proceed-checkout");
 
-  // Step 1: Read cartItems from localStorage
   let rawCart = JSON.parse(localStorage.getItem("cartItems")) || [];
 
-  // Step 2: Convert to consistent format [{ id: "1", quantity: 1 }]
   const cartMap = new Map();
 
   rawCart.forEach(item => {
@@ -21,14 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Final normalized cart array
   let cartItems = Array.from(cartMap.entries()).map(([id, quantity]) => ({ id, quantity }));
-
-  // Save back the normalized format
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
   function saveCart() {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    // 🔁 Sync header cart count
+    window.dispatchEvent(new Event("cartUpdated"));
   }
 
   function updateTotals(products) {
@@ -105,14 +102,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const id = String(button.getAttribute("data-id"));
         cartItems = cartItems.filter(i => i.id !== id);
         saveCart();
-        location.reload();
+        location.reload(); // or call renderCart(matched) again
       });
     });
 
     updateTotals(products);
   }
 
-  // Fetch products and match
   fetch("http://localhost:3000/products")
     .then(res => res.json())
     .then(products => {
@@ -126,10 +122,8 @@ document.addEventListener("DOMContentLoaded", () => {
       cartTableBody.innerHTML = `<tr><td colspan="4" class="text-danger text-center">Error loading cart items.</td></tr>`;
     });
 
-  // ✅ Proceed to Checkout button
   if (checkoutBtn) {
     checkoutBtn.addEventListener("click", () => {
-      // Clear buyNowItem to allow full cart rendering in checkout.js
       localStorage.removeItem("buyNowItem");
       window.location.href = "checkout.html";
     });

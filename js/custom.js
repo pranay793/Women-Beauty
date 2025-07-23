@@ -158,12 +158,12 @@ document.addEventListener("DOMContentLoaded", () => {
           viewAllWrapper.className = "text-center my-4 col-12";
 
           const viewAllBtn = document.createElement("button");
-          viewAllBtn.className = "btn btn-outline-dark";
+          viewAllBtn.className = "btn btn-outline-dark view-btn";
           viewAllBtn.textContent = "View All";
 
           viewAllBtn.addEventListener("click", () => {
             showProducts(remaining);
-            viewAllWrapper.remove();
+            viewAllWrapper.remove(); 
             setupFilters(); // rebind filters after new products
           });
 

@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const itemEl = document.createElement("div");
       itemEl.classList.add("summary-item");
       itemEl.innerHTML = `
-        <div class="d-flex align-items-center mb-3">
+        <div class="d-flex align-items-center mb-3 px-3 pt-3 pb-2">
           <img src="${item.image}" alt="${item.name}" style="width: 80px; height: 80px; object-fit: cover;" class="me-3">
           <div>
             <h6 class="mb-1">${item.name}</h6>

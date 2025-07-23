@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         `;
 
-        const isInCart = cartItems.includes(product.id);
-        const isInWishlist = wishlistItems.includes(product.id);
+          const isInCart = cartItems.some(item => item.id === product.id || item === product.id);
+          const isInWishlist = wishlistItems.some(item => item.id === product.id || item === product.id);
 
         const box = document.createElement("div");
         box.className = "product-box px-2";

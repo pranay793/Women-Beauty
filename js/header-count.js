@@ -1,34 +1,59 @@
-// header-count.js — must be loaded on cart.html or static pages
+// ✅ header-count.js — load this on every page that includes header
 document.addEventListener("DOMContentLoaded", () => {
   const cartCountEl = document.getElementById("cart-count");
   const wishlistCountEl = document.getElementById("wishlist-count");
 
-  let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-  let wishlistItems = JSON.parse(localStorage.getItem("wishlistItems")) || [];
-
-  // Cleanup malformed data
-  if (!Array.isArray(cartItems)) {
-    cartItems = [];
-    localStorage.removeItem("cartItems");
+  // ⏫ Custom event emit helper
+  function dispatchHeaderUpdateEvents() {
+    window.dispatchEvent(new Event("cartUpdated"));
+    window.dispatchEvent(new Event("wishlistUpdated"));
   }
 
-  const totalCartQty = cartItems.reduce((sum, item) => sum + (parseInt(item.quantity) || 0), 0);
+  // ⏫ Patch localStorage.setItem to dispatch events when cart/wishlist changes
+  const originalSetItem = localStorage.setItem;
+  localStorage.setItem = function (key, value) {
+    originalSetItem.apply(this, arguments);
+    if (key === "cartItems") {
+      window.dispatchEvent(new Event("cartUpdated"));
+    } else if (key === "wishlistItems") {
+      window.dispatchEvent(new Event("wishlistUpdated"));
+    }
+  };
 
-  if (cartCountEl) {
-    cartCountEl.textContent = totalCartQty;
-    if (totalCartQty > 0) {
-      cartCountEl.classList.remove("d-none");
-    } else {
-      cartCountEl.classList.add("d-none");
+  function updateCounts() {
+    let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    let wishlistItems = JSON.parse(localStorage.getItem("wishlistItems")) || [];
+
+    // Handle malformed data
+    if (!Array.isArray(cartItems)) cartItems = [];
+    if (!Array.isArray(wishlistItems)) wishlistItems = [];
+
+    const totalQty = cartItems.reduce((sum, item) => {
+      if (item && typeof item === "object" && "quantity" in item) {
+        return sum + (parseInt(item.quantity) || 1);
+      }
+      return sum + 1;
+    }, 0);
+
+    if (cartCountEl) {
+      cartCountEl.textContent = totalQty;
+      cartCountEl.classList.toggle("d-none", totalQty === 0);
+    }
+
+    if (wishlistCountEl) {
+      wishlistCountEl.textContent = wishlistItems.length;
+      wishlistCountEl.classList.toggle("d-none", wishlistItems.length === 0);
     }
   }
 
-  if (wishlistCountEl) {
-    wishlistCountEl.textContent = wishlistItems.length;
-    if (wishlistItems.length > 0) {
-      wishlistCountEl.classList.remove("d-none");
-    } else {
-      wishlistCountEl.classList.add("d-none");
-    }
-  }
+  // ✅ Initial load
+  updateCounts();
+
+  // ✅ Realtime update using global events
+  window.addEventListener("cartUpdated", updateCounts);
+  window.addEventListener("wishlistUpdated", updateCounts);
+
+  // ✅ Expose to global scope for manual use
+  window.updateHeaderCounts = updateCounts;
+  window.dispatchHeaderUpdateEvents = dispatchHeaderUpdateEvents;
 });
