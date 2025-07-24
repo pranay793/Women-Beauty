@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 </p>
                 ${starsHTML}
                 <div class="d-flex justify-content-center gap-2 mt-3">
-                  <button class="btn btn-sm btn-outline-danger remove-btn" data-id="${product.id}">
+                  <button class="btn btn-sm btn-outline-danger remove-btn rounded-0" data-id="${product.id}">
                     <i class="fas fa-trash"></i> Remove
                   </button>
-                  <button class="btn btn-sm btn-outline-primary cart-btn" data-id="${product.id}">
+                  <button class="btn btn-sm rounded-0 cart-btn2" data-id="${product.id}">
                     <i class="fas fa-shopping-cart"></i> Add to Cart
                   </button>
                 </div>

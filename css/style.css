@@ -886,15 +886,14 @@ input[type="range"] {
   padding: 2.5rem 2rem;
   max-width: 500px;
   width: 100%;
-  border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
 .checkmark {
-  font-size: 3rem;
-  color: #4CAF50;
-  margin-bottom: 1rem;
+  font-size: 8rem;
+    color: #4CAF50;
+    margin-bottom: 0;
 }
 
 .thankyou-container h1 {
@@ -1100,12 +1099,15 @@ input[type="range"] {
   width: 30px!important;
   height: 30px!important;
   border-radius: 100%;
+  top: 96%!important;
 }
 .swiper-button-prev{
   background: #000;
-  width: 30px!important;
-  height: 30px!important;
-  border-radius: 100%;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 100%;
+    top: 96% !important;
+    left: 92% !important;
 }
 .swiper-button-next:after, .swiper-button-prev:after{
   font-size: 15px!important;
@@ -1239,6 +1241,9 @@ input[type="range"] {
   padding: 8px 30px;
   font-size: 16px;
 }
+.navbar-brand img{
+  width: 120px;
+}
 
 
 @media (max-width: 768px) {
@@ -1251,10 +1256,12 @@ input[type="range"] {
   }
   .hero-slider p{
     font-size: 12px;
+    display: none;
   }
   .banner-slide h2 {
-    font-size: 24px;
-    padding-top: 40px;
+    font-size: 38px;
+    padding-top: 70px;
+    padding-bottom: 60px;
 }
 
   .hero-content {
@@ -1278,7 +1285,7 @@ input[type="range"] {
   }
   .width-btn {
     width: 135px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .about-skin-section {
   padding: 0px 20px;
@@ -1295,6 +1302,9 @@ input[type="range"] {
   background-position: center top;
   background-repeat: no-repeat;
   padding: 11.875rem 0;
+}
+.navbar-nav .nav-link {
+  padding: 10px 0;
 }
 
 }
@@ -1322,6 +1332,12 @@ input[type="range"] {
     width: 100%;
     margin-bottom: 20px;
 }
+.swiper-button-prev {
+  left: 81% !important;
+}
+.navbar-brand img{
+  width: 90px;
+}
 }
 
 .tick-list {
@@ -1346,4 +1362,12 @@ input[type="range"] {
   top: 2px;
   font-size: 18px;
   font-weight: 700;
+}
+.cart-btn2{
+  border:1px solid #000;
+}
+.cart-btn2:hover{
+  border:1px solid #000;
+  background-color: #000;
+  color: #fff;
 }

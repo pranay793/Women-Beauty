@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const featured = products.filter(p => p.rating >= 4);
       const carousel = document.getElementById("feature-product-carousel");
 
-      let cartItems = JSON.parse(localStorage.getItem("cartItems") || "[]");
-      let wishlistItems = JSON.parse(localStorage.getItem("wishlistItems") || "[]");
+      let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+      let wishlistItems = JSON.parse(localStorage.getItem("wishlistItems")) || [];
 
       updateHeaderCounts(); // ✅ Set initial count in header
 
