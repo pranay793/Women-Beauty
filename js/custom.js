@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const priceMax = document.getElementById("price-max");
   const priceRangeLabel = document.getElementById("price-range-value");
 
-  fetch("products.json")
+  fetch("http://localhost:3000/products")
     .then(res => res.json())
     .then(products => {
       allProducts = products;
